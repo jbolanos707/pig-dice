@@ -58,6 +58,10 @@ Player.prototype.newGame = function(){
 
 $(document).ready(function() {
 
+  $(".first-row").hide();
+  $(".buttons-1").hide();
+  $(".buttons-2").hide();
+
   $("#player-name-form").submit(function(event) {
     event.preventDefault();
 
@@ -69,7 +73,9 @@ $(document).ready(function() {
 
     var player1 = new Player(player1input, 0, 0);
     var player2 = new Player(player2input, 0, 0);
-    $(".buttons-2").hide();
+
+    $(".first-row").fadeIn("fast");
+    $(".buttons-1").fadeIn("slow");
 
 // PLAYER ONE ROLL AND STOP BUTTON BELOW
 
@@ -84,8 +90,8 @@ $(document).ready(function() {
             $(".player-1-total-score").text(" " + player1.score);
 
             if(player1Dice === "Hit One"){
-              $(".buttons-1").hide();
-              $(".buttons-2").show();
+              $(".buttons-1").fadeOut("slow");
+              $(".buttons-2").fadeIn("slow");
             };
 
             var winner = player1.scoreCheck();
@@ -116,8 +122,8 @@ $(document).ready(function() {
             $(".player-2-roll").text(" ");
 
           }else{
-            $(".buttons-1").hide();
-            $(".buttons-2").show();
+            $(".buttons-1").fadeOut("slow");
+            $(".buttons-2").fadeIn("slow");
           }
 
         });
@@ -138,8 +144,8 @@ $(document).ready(function() {
             $(".player-2-total-score").text(" " + player2.score);
 
             if(player2Dice === "Hit One"){
-              $(".buttons-2").hide();
-              $(".buttons-1").show();
+              $(".buttons-2").fadeOut("slow");
+              $(".buttons-1").fadeIn("slow");
             };
 
             var winner = player2.scoreCheck();
@@ -169,11 +175,11 @@ $(document).ready(function() {
             $(".player-2-score").text(" " + player2.turnScore);
             $(".player-1-roll").text(" ");
             $(".player-2-roll").text(" ");
-            $(".buttons-2").hide();
-            $(".buttons-1").show();
+            $(".buttons-2").fadeOut("slow");
+            $(".buttons-1").fadeIn("slow");
           }else{
-            $(".buttons-2").hide();
-            $(".buttons-1").show();
+            $(".buttons-2").fadeOut("slow");
+            $(".buttons-1").fadeIn("slow");
           }
 
         });
