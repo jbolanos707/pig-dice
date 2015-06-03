@@ -2,16 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="css/lib/normalize.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
 
-    <script src='js/lib/jquery-1.11.3.js'></script>
+    <script src='js/jquery-1.11.3.min.js'></script>
     <script src='js/script.js'></script>
 
   </head>
   <body>
 
+    <div class="container">
+
+      <form id="player-name-form">
+        <input type="text" id="player1" placeholder="Enter Name">
+        <input type="text" id="player2" placeholder="Enter Name">
+        <button type="submit">Start Game</button>
+      </form>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Piggy Game</h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-6 player-1-div">
+          <h2 class="player-1-name">
+          </h2>
+          <h4 class="player-1-score">
+          </h4>
+        </div>
+        <div class="col-sm-6 player-2-div">
+            <h2 class="player-2-name">
+            </h2>
+            <h4 class="player-2-score">
+            </h4>
+
+        </div>
+      </div>
+
+    </div>
 
   </body>
 </html>
