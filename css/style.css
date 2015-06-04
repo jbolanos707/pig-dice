@@ -28,7 +28,7 @@
 
 .first-row {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: white;
+  color: #F072A9;
 }
 
 img.header-pic {
@@ -77,7 +77,7 @@ body {
     width: 100px;
     color: #F072A9;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 20px;
     text-shadow: 1px 1px 1px #fff;
 }
 .form-style-3 fieldset{
@@ -106,22 +106,13 @@ body {
     -moz-box-shadow:-0px -1px 2px #F1F1F1;
     -webkit-box-shadow:-0px -1px 2px #F1F1F1;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 24px;
 }
 .form-style-3 textarea{
     width:250px;
     height:100px;
 }
-.form-style-3 input[type=text],
-.form-style-3 input[type=date],
-.form-style-3 input[type=datetime],
-.form-style-3 input[type=number],
-.form-style-3 input[type=search],
-.form-style-3 input[type=time],
-.form-style-3 input[type=url],
-.form-style-3 input[type=email],
-.form-style-3 select,
-.form-style-3 textarea{
+.form-style-3 input[type=text] {
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -149,8 +140,4 @@ body {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     font-weight: bold;
-}
-.required{
-    color:red;
-    font-weight:normal;
 }
