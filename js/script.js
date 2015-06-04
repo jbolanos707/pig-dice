@@ -42,7 +42,7 @@ Player.prototype.newTurn = function() {
 };
 
 Player.prototype.scoreCheck = function() {
-  if(this.score >= 10){
+  if(this.score >= 100){
     return "Win";
   };
 };
